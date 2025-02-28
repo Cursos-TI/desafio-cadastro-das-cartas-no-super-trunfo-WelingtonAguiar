@@ -20,7 +20,7 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
 */
 
 #include <stdio.h>
-#include <string.h>
+#include <string.h> // Necessário para chamar as funções fgets e strcspn.
 
 int main() {
     // Declaração de variáveis para armazenar os dados das cartas
