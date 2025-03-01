@@ -24,7 +24,9 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
 
 int main() {
     // Declaração de variáveis para armazenar os dados das cartas
-    char estado1, estado2, codigo_da_carta1[4], codigo_da_carta2[4], nome_da_cidade1[30], nome_da_cidade2[30];
+    char estado1, estado2; 
+    char codigo_da_carta1[4], codigo_da_carta2[4];
+    char nome_da_cidade1[30], nome_da_cidade2[30];
     int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
     float area1, area2, pib1, pib2;
 
