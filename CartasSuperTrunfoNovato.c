@@ -16,7 +16,7 @@ Nome da Cidade: O nome da cidade. Tipo: char[] (string)
 População: O número de habitantes da cidade. Tipo: int
 Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
 PIB: O Produto Interno Bruto da cidade. Tipo: float
-Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
+Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int.
 */
 
 #include <stdio.h>
