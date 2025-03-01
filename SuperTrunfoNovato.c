@@ -20,17 +20,13 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
 */
 
 #include <stdio.h>
-#include <string.h> // Necessário para chamar as funções fgets e strcspn.
+#include <string.h>
 
 int main() {
     // Declaração de variáveis para armazenar os dados das cartas
-    char estado1, estado2;
-    char codigo_da_carta1[4], codigo_da_carta2[4];
-    char nome_da_cidade1[30], nome_da_cidade2[30];
-    int populacao1, populacao2;
-    float area1, area2;
-    float pib1, pib2;
-    int pontos_turisticos1, pontos_turisticos2 ;
+    char estado1, estado2, codigo_da_carta1[4], codigo_da_carta2[4], nome_da_cidade1[30], nome_da_cidade2[30];
+    int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
+    float area1, area2, pib1, pib2;
 
     // Mensagem de boas-vindas e breve explicação do jogo
     printf("Olá, seja bem vindo ao jogo Super Trunfo!\n\n");
