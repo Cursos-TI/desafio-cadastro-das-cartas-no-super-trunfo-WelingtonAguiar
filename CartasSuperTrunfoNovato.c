@@ -39,23 +39,21 @@ int main() {
         
     printf("Para começar, vamos cadastar nossas cartas. Siga, conforme instruções.\n\n");
 
-    // Cadastro da primeira carta
+    // Cadastro da Primeira Carta--------------------------------------------------------------------------------------------------------------------------------------------------
+
     printf("Carta 1: \n\n");
 
     // Obtendo o valor para variável estado1
     printf("Informe uma letra de 'A' a 'H'. Essa letra irá será a identificação para o nosso estado: ");
     scanf(" %c", &estado1);
 
-    //Consome o caracter de nova linha deixado no buffer
+    // Consome o caractere de nova linha deixado no buffer
     getchar();
 
     // Obtendo o valor para variável codigo_da_carta1
     printf("Com base na letra que digitou na opção anterior. Agora vamos criar uma identificação para essa carta (Ex: A01): ");
     fgets(codigo_da_carta1, 4 , stdin);
     codigo_da_carta1[strcspn(codigo_da_carta1, "\n")] = 0;
-
-    //Consome o caracter de nova linha deixado no buffer
-    getchar();
 
     // Obtendo o valor para variável nome_da_cidade1
     printf("Agora, informe o nome dessa cidade: ");
@@ -80,14 +78,12 @@ int main() {
     printf("E por último, informe a quantidade de pontos turísticos dessa cidade: ");
     scanf("%d", &pontos_turisticos1);
 
-    // Consome o caractere de nova linha deixado no buffer
-    getchar();
-
     printf("\n");
 
     printf("Muito bem! Você cadastrou a primeira carta. Agora, vamos cadastrar os dados da segunda.\n\n");
 
-    // Cadastro da segunda carta
+    // Cadastro da Segunda Carta--------------------------------------------------------------------------------------------------------------------------------------------------
+
     printf("Carta 2: \n\n");
 
     // Obtendo o valor para variável estado2
@@ -95,17 +91,14 @@ int main() {
     scanf(" %c", &estado2);
 
     // Consome o caractere de nova linha deixado no buffer
-    getchar();
-
+    getchar();    
+    
     // Obtendo o valor para variável codigo_da_carta2    
     printf("Com base na letra que digitou na opção anterior. Agora vamos criar uma identificação para essa carta (Ex: B02): ");
     // fgets foi utilizado para ler a entrada do usuário, incluindo espaços em branco.
     fgets(codigo_da_carta2, 4 , stdin);
     // strcspn foi utilizado para encontrar a posição do caracter de nova linha '\n' e substituí-lo por '0'. 
     codigo_da_carta2[strcspn(codigo_da_carta2, "\n")] = 0;
-
-    // Consome o caractere de nova linha deixado no buffer
-    getchar();
 
     // Obtendo o valor para variável nome_da_cidade2
     printf("Agora, informe o nome dessa cidade: ");
