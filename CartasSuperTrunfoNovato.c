@@ -51,7 +51,7 @@ int main() {
     getchar();
 
     // Obtendo o valor para variável codigo_da_carta1
-    printf("Com base na letra que digitou na opção anterior. Agora vamos criar uma identificação para essa carta (Ex: A01): ");
+    printf("Com base na letra que digitou na opção anterior. Agora vamos criar uma identificação para essa carta (Ex: 01): ");
     fgets(codigo_da_carta1, 4 , stdin);
     codigo_da_carta1[strcspn(codigo_da_carta1, "\n")] = 0;
 
@@ -94,7 +94,7 @@ int main() {
     getchar();    
     
     // Obtendo o valor para variável codigo_da_carta2    
-    printf("Com base na letra que digitou na opção anterior. Agora vamos criar uma identificação para essa carta (Ex: B02): ");
+    printf("Com base na letra que digitou na opção anterior. Agora vamos criar uma identificação para essa carta (Ex: 02): ");
     // fgets foi utilizado para ler a entrada do usuário, incluindo espaços em branco.
     fgets(codigo_da_carta2, 4 , stdin);
     // strcspn foi utilizado para encontrar a posição do caracter de nova linha '\n' e substituí-lo por '0'. 
@@ -128,7 +128,7 @@ int main() {
 
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
-    printf("Código: %s\n", codigo_da_carta1);
+    printf("Estado: %c%s\n", estado1, codigo_da_carta1);
     printf("Nome da Cidade: %s\n", nome_da_cidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
@@ -138,7 +138,7 @@ int main() {
     printf("\n");
 
     printf("Carta 2:\n");
-    printf("Estado: %c\n", estado2);
+    printf("Estado: %c%s\n", estado2, codigo_da_carta2);
     printf("Código: %s\n", codigo_da_carta2);
     printf("Nome da Cidade: %s\n", nome_da_cidade2);
     printf("População: %d\n", populacao2);
