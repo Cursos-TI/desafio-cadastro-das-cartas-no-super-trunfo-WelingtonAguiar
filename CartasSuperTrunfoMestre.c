@@ -105,19 +105,16 @@ int main() {
     printf("E por último, informe a quantidade de pontos turísticos dessa cidade: ");
     scanf("%d", &pontos_turisticos2);
 
-
     // Cálculo densidade populacional
     // Utilizado conversão explicita (casting) para correção na saída de dados.
     densidade_populacional1 = (double) populacao1 / area1;
     densidade_populacional2 = (double) populacao2 / area2;
-
 
     // Calculo pib per capita das castas
     // Utilizado conversão explicita (casting) para correção na saída de dados.
     // O valor exibido na descrição está em bilhões, para a saída deseja, foi necessário multiplicar por 1b para depois dividir.
     pib_capita1 = (double) (pib1 * 1000000000) / populacao1;
     pib_capita2 = (double) (pib2 * 1000000000)  / populacao2;
-
 
     // Cácula o inverso da densidade populacional das cartas. Realizado conversão explicita para exibição correta dos valores.
     inversoDensidadePopulacional1 = (double) 1 / densidade_populacional1;    
@@ -126,7 +123,6 @@ int main() {
     // Cálculo do super poder das cartas (calcula todos os atributos númericos das cartas).
     SuperPoder1 = (float) populacao1 + area1 + pib1 + pontos_turisticos1 + pib_capita1 + inversoDensidadePopulacional1;
     SuperPoder2 = (float) populacao2 + area2 + pib2 + pontos_turisticos2 + pib_capita2 + inversoDensidadePopulacional2;    
-
 
     printf("\n");
 
@@ -159,7 +155,6 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", pib_capita2);
     printf("Poder total da carta (Super Poder): %.2f\n\n", SuperPoder2);
 
-
     // Comparação entre os valores das duas cartas.
     // Utilizando conversão explicita para garantir a saída de dados.
     populacaoComparacao = (int) populacao1 > (int) populacao2;
@@ -171,7 +166,6 @@ int main() {
     pibCapitaComparacao = (int) pib_capita1 > (int) pib_capita2;
     superPoderComparacao = (int) SuperPoder1 > (int) SuperPoder2;
 
-
     // Resultado final da comparação entre as cartas, comparando os valores por atributos (1 - Carta 1 vence), (0 - Carta 2 vence).
     printf("Que rufem os tambores!\n\n");
     printf("Comparação das cartas: \n\n");
@@ -182,7 +176,6 @@ int main() {
     printf("Inverso Densidade Populacional 1: %.6f\n", inversoDensidadePopulacional1);
     printf("Inverso Densidade Populacional 2: %.6f\n\n", inversoDensidadePopulacional2);    
     */
-
 
     printf("População: (%d)\n", populacaoComparacao);
     printf("Área: (%d)\n", areaComparacao);
